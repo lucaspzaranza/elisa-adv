@@ -1,3 +1,8 @@
+:root {
+  --purple-color: #c553df;
+  --insta-width: 1080px;
+}
+
 .App {
   text-align: justify;
   display: flex;
@@ -25,15 +30,15 @@
 }
 
 p {
-  width: 1080px;
+  width: var(--insta-width);
+  color: var(--purple-color);
   background-color: transparent;
-  color: #c553df;
   font-size: calc(10px + 2vmin);
   font-weight: normal;
 }
 
 h2 {
-  color: #c553df;
+  color: var(--purple-color);
 }
 
 a {
@@ -56,7 +61,7 @@ a {
 }
 
 .links-section {
-  width: 1080px;
+  width: var(--insta-width);
   margin-bottom: 30px;
 }
 
@@ -75,5 +80,34 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: large;
+  }
+}
+
+@media (max-width: 1080px) {
+  p {
+    width: 90vw;
+  }
+
+  img {
+    width: 90vw;
+  }
+
+  .links-section {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  .links-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    margin-right: 0;
+
+    label {
+      font-size: 1.1rem;
+    }
   }
 }
