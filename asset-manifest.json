@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/elisa-adv/static/css/main.3cac46f8.css",
+    "main.js": "/elisa-adv/static/js/main.9b5b62a7.js",
+    "static/js/453.9db4d716.chunk.js": "/elisa-adv/static/js/453.9db4d716.chunk.js",
+    "static/media/direito-canonico.jpg": "/elisa-adv/static/media/direito-canonico.6a78b7c7c99f4d3d7a56.jpg",
+    "static/media/elisa.jpg": "/elisa-adv/static/media/elisa.118f7717c3dbb034340f.jpg",
+    "static/media/logo_transparent.png": "/elisa-adv/static/media/logo_transparent.44a2cef0dd8d27ba2861.png",
+    "index.html": "/elisa-adv/index.html",
+    "main.3cac46f8.css.map": "/elisa-adv/static/css/main.3cac46f8.css.map",
+    "main.9b5b62a7.js.map": "/elisa-adv/static/js/main.9b5b62a7.js.map",
+    "453.9db4d716.chunk.js.map": "/elisa-adv/static/js/453.9db4d716.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cac46f8.css",
+    "static/js/main.9b5b62a7.js"
+  ]
+}
