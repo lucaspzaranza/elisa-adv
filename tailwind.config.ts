@@ -12,8 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#C850D3",
-        darker: "#84099F",
-        lighter: "#EAB1F6"
+        primaryDarker: "#84099F",
+        primaryLighter: "#EAB1F6"
       },
     },
   },
