@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Header from "@/components/sections/header"
+import Header from "@/components/sections/header";
 import AboutMe from "@/components/sections/about-me";
 import WorkAreas from "@/components/sections/work-areas";
 import CoreValues from "@/components/sections/core-values";
@@ -11,14 +10,14 @@ import Footer from "@/components/sections/footer";
 export default function Home() {
   return (
     <div>
-        <Header/>
-        <AboutMe/>
-        <WorkAreas/>
-        <CoreValues/>
-        <SAC/>
-        <Instagram/>
-        <ContactForm/>
-        <Footer/>
+      <Header />
+      <AboutMe />
+      <WorkAreas />
+      <CoreValues />
+      <SAC />
+      <Instagram />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

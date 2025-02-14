@@ -12,8 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#C850D3",
-        primaryDarker: "#84099F",
-        primaryLighter: "#EAB1F6"
+        "primary-darker": "#84099F",
+        "primary-lighter": "#EAB1F6",
+      },
+      backgroundImage: {
+        "elisa-1": "url('/elisa-1.png')",
       },
     },
   },
