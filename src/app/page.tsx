@@ -11,13 +11,15 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <AboutMe />
-      <WorkAreas />
-      <CoreValues />
-      <SAC />
-      <Instagram />
-      <ContactForm />
-      <Footer />
+      <div className="">
+        <AboutMe />
+        <WorkAreas />
+        <CoreValues />
+        <SAC />
+        <Instagram />
+        <ContactForm />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -11,8 +11,14 @@ import "swiper/css/pagination";
 const images = ["/banners/1.jpg", "/banners/2.jpg", "/banners/3.jpg"];
 
 export default function ImageCarousel() {
+  const dimensions = "w-[65rem] h-[22rem] ";
   return (
-    <div className="w-full max-w-3xl mx-auto overflow-hidden rounded-[50px]">
+    <div
+      className={
+        dimensions +
+        "mx-auto overflow-hidden rounded-[50px] shadow-[-15px_20px_30px_rgba(0,0,0,0.55)]"
+      }
+    >
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={20}
@@ -20,15 +26,18 @@ export default function ImageCarousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop
+        className="custom-bullets-colors"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-64 overflow-hidden rounded-[50px]">
+            <div
+              className={dimensions + "relative overflow-hidden rounded-[50px]"}
+            >
               <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                objectFit="fill"
               />
             </div>
           </SwiperSlide>

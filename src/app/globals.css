@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-bullets-colors .swiper-pagination-bullet {
+  background: #eab1f6; /* Cor da bolinha inativa */
+  opacity: 0.7;
+}
+
+.custom-bullets-colors .swiper-pagination-bullet-active {
+  background: #84099f; /* Cor da bolinha ativa */
+  opacity: 1;
+}
