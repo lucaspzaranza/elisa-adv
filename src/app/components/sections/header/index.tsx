@@ -9,7 +9,7 @@ export default function Header() {
   const btnMarginLeft = "ml-4";
 
   return (
-    <div className="bg-no-repeat bg-left bg-cover pb-8">
+    <div className="bg-no-repeat bg-left bg-cover mb-24">
       <div className="grid grid-cols-3 h-6">
         <div className="bg-primary-lighter"></div>
         <div className="bg-primary-darker"></div>

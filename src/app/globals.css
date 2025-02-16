@@ -29,3 +29,9 @@ body {
   background: #84099f; /* Cor da bolinha ativa */
   opacity: 1;
 }
+
+h1,
+h2,
+p {
+  padding-left: 100px;
+}
