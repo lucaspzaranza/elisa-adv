@@ -20,6 +20,9 @@ export default {
         "elisa-1": "url('/elisa-1.png')",
         "elisa-2": "url('/elisa-2.jpg')",
       },
+      height: {
+        inherit: "inherit",
+      },
     },
   },
   plugins: [],

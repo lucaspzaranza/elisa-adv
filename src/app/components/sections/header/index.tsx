@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import ImageCarousel from "./image-carousel";
+import ImageCarousel from "../../ui/image-carousel";
 
 export default function Header() {
   const btnClasses =
     "px-6 py-1 rounded-full bg-primary text-lg text-white min-w-[180px]";
   const btnMarginLeft = "ml-4";
+  const btnWithMarginLeft = btnClasses + " " + btnMarginLeft;
 
   return (
     <div className="bg-no-repeat bg-left bg-cover mb-24">
@@ -18,10 +19,10 @@ export default function Header() {
 
       <div className="mt-8 flex flex-row justify-center">
         <button className={btnClasses}>Sobre mim</button>
-        <button className={btnClasses + " " + btnMarginLeft}>Serviço</button>
-        <button className={btnClasses + " " + btnMarginLeft}>Missão</button>
-        <button className={btnClasses + " " + btnMarginLeft}>Dúvidas</button>
-        <button className={btnClasses + " " + btnMarginLeft}>Contato</button>
+        <button className={btnWithMarginLeft}>Serviço</button>
+        <button className={btnWithMarginLeft}>Missão</button>
+        <button className={btnWithMarginLeft}>Dúvidas</button>
+        <button className={btnWithMarginLeft}>Contato</button>
       </div>
 
       <div className="w-1/2 ml-64 my-10">
