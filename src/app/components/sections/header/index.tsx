@@ -5,12 +5,12 @@ import ImageCarousel from "../../ui/image-carousel";
 
 export default function Header() {
   const btnClasses =
-    "px-6 py-1 rounded-full bg-primary text-lg text-white min-w-[180px]";
+    "px-6 py-1 rounded-full bg-primary text-lg font-semibold text-white min-w-[180px]";
   const btnMarginLeft = "ml-4";
   const btnWithMarginLeft = btnClasses + " " + btnMarginLeft;
 
   return (
-    <div className="bg-no-repeat bg-left bg-cover mb-24">
+    <div className="bg-elisa-1 bg-no-repeat bg-left bg-cover bg-[position:0px_10%] mb-24">
       <div className="grid grid-cols-3 h-6">
         <div className="bg-primary-lighter"></div>
         <div className="bg-primary-darker"></div>
@@ -25,8 +25,8 @@ export default function Header() {
         <button className={btnWithMarginLeft}>Contato</button>
       </div>
 
-      <div className="w-1/2 ml-64 my-10">
-        <Image src="/logo.png" alt="Logo" width={500} height={269} priority />
+      <div className="w-1/2 ml-64 my-20">
+        <Image src="/logo.png" alt="Logo" width={540} height={230} priority />
       </div>
 
       <ImageCarousel />

@@ -18,10 +18,13 @@ export default {
       },
       backgroundImage: {
         "elisa-1": "url('/elisa-1.png')",
-        "elisa-2": "url('/elisa-2.jpg')",
+        "elisa-2": "url('/elisa-2.png')",
       },
       height: {
         inherit: "inherit",
+      },
+      fontFamily: {
+        montserrat: "var(--font-montserrat), sans-serif",
       },
     },
   },
