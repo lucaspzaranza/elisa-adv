@@ -26,6 +26,9 @@ export default {
       fontFamily: {
         montserrat: "var(--font-montserrat), sans-serif",
       },
+      padding: {
+        default: "100px",
+      },
     },
   },
   plugins: [],

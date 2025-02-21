@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutMe() {
   const scalesSize = 40;
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gradient-to-b from-[#f3f4f6] to-[#fff]">
       <div className="w-full bg-elisa-2 bg-no-repeat bg-[length:864px_1080px] bg-[100%_40%]">
         <div className="w-1/2 text-strong-color">
           <h1 className="text-4xl">

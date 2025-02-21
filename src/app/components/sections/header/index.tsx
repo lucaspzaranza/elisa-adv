@@ -10,26 +10,28 @@ export default function Header() {
   const btnWithMarginLeft = btnClasses + " " + btnMarginLeft;
 
   return (
-    <div className="bg-elisa-1 bg-no-repeat bg-left bg-cover bg-[position:0px_10%] mb-24">
-      <div className="grid grid-cols-3 h-6">
-        <div className="bg-primary-lighter"></div>
-        <div className="bg-primary-darker"></div>
-        <div className="bg-primary"></div>
-      </div>
+    <div className="bg-gray-100 pb-24">
+      <div className="bg-elisa-1 bg-no-repeat bg-cover bg-[position:0px_10%]">
+        <div className="grid grid-cols-3 h-6">
+          <div className="bg-primary-lighter"></div>
+          <div className="bg-primary-darker"></div>
+          <div className="bg-primary"></div>
+        </div>
 
-      <div className="mt-8 flex flex-row justify-center">
-        <button className={btnClasses}>Sobre mim</button>
-        <button className={btnWithMarginLeft}>Serviço</button>
-        <button className={btnWithMarginLeft}>Missão</button>
-        <button className={btnWithMarginLeft}>Dúvidas</button>
-        <button className={btnWithMarginLeft}>Contato</button>
-      </div>
+        <div className="mt-8 flex flex-row justify-center">
+          <button className={btnClasses}>Sobre mim</button>
+          <button className={btnWithMarginLeft}>Serviço</button>
+          <button className={btnWithMarginLeft}>Missão</button>
+          <button className={btnWithMarginLeft}>Dúvidas</button>
+          <button className={btnWithMarginLeft}>Contato</button>
+        </div>
 
-      <div className="w-1/2 ml-64 my-20">
-        <Image src="/logo.png" alt="Logo" width={540} height={230} priority />
-      </div>
+        <div className="w-1/2 ml-64 my-20">
+          <Image src="/logo.png" alt="Logo" width={540} height={230} priority />
+        </div>
 
-      <ImageCarousel />
+        <ImageCarousel />
+      </div>
     </div>
   );
 }
