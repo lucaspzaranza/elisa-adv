@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import ImageCarousel from "../../ui/image-carousel";
+import Button from "@/components/ui/button";
 
 export default function Header() {
   const btnClasses =
@@ -19,11 +20,11 @@ export default function Header() {
         </div>
 
         <div className="mt-8 flex flex-row justify-center">
-          <button className={btnClasses}>Sobre mim</button>
-          <button className={btnWithMarginLeft}>Serviço</button>
-          <button className={btnWithMarginLeft}>Missão</button>
-          <button className={btnWithMarginLeft}>Dúvidas</button>
-          <button className={btnWithMarginLeft}>Contato</button>
+          <Button label="Sobre mim" />
+          <Button label="Serviço" hasMargin />
+          <Button label="Missão" hasMargin />
+          <Button label="Dúvidas" hasMargin />
+          <Button label="Contato" hasMargin />
         </div>
 
         <div className="w-1/2 ml-64 my-20">
