@@ -17,10 +17,12 @@ export default function CollapsibleMenu(
       {/* Botão que expande/colapsa */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-1/2 flex flex-row items-start justify-start p-0 rounded-lg"
+        className="w-7/12 flex flex-row items-start justify-start p-0 rounded-lg"
       >
-        <span className="flex flex-row w-fit items-start gap-2 justify-between w-content text-start text-3xl pl-0 mr-3 font-bold text-primary-darker">
-          <p className="inline-block w-fit leading-none p-0">{props.topic}</p>
+        <span className="flex flex-row w-full items-start gap-3 justify-between text-start text-4xl pl-0 mr-3 font-bold text-primary-darker">
+          <p className="inline-block w-content leading-tight p-0">
+            {props.topic}
+          </p>
 
           {/* Ícone de seta com animação */}
           <motion.div
@@ -42,7 +44,7 @@ export default function CollapsibleMenu(
         className="overflow-hidden"
       >
         <div className="w-1/2 py-4">
-          <p className="text-2xl pl-0">{props.children}</p>
+          <p className="text-3xl pl-0">{props.children}</p>
         </div>
       </motion.div>
     </div>
