@@ -2,7 +2,7 @@ import CollapsibleMenu from "@/components/ui/collapsible";
 
 export default function SAC() {
   return (
-    <div>
+    <div className="mb-16">
       <div
         className="w-fit flex pr-12 py-4 text-white text-[3.25rem] rounded-r-full
         font-bold bg-gradient-to-r from-[#7f009c] to-[#C850D3] mb-10"
