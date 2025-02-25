@@ -19,6 +19,7 @@ export default {
       backgroundImage: {
         "elisa-1": "url('/elisa-1.png')",
         "elisa-2": "url('/elisa-2.png')",
+        flowers: "url('/logo-bg.png')",
       },
       height: {
         inherit: "inherit",

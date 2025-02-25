@@ -18,7 +18,7 @@ export default function CoreValues() {
   ];
 
   return (
-    <div className="mb-16 pl-[100px] w-11/12">
+    <div id="core-values" className="mb-16 pl-[100px] w-11/12">
       {coreValues.map((data, index) => (
         <Banner {...data} key={index} />
       ))}

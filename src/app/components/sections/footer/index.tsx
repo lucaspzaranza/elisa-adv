@@ -1,7 +1,35 @@
+import Image from "next/image";
+
 export default function Footer() {
+  const h1Classes = `w-full flex flex-row items-center justify-center
+  text-3xl font-semibold text-primary-darker p-0`;
+
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
-  )
+    <footer className="relative w-full h-auto flex flex-col items-center justify-center">
+      <h1 className={h1Classes}>elisa.ferraz23@gmail.com</h1>
+      <div className="w-full flex flex-row justify-center mb-8">
+        <div className="w-[100vw] text-center">
+          <h1 className={h1Classes}>11 99350-1713</h1>
+        </div>
+        <div className="absolute bottom-4 right-4 hover:opacity-80">
+          <a
+            href="https://api.whatsapp.com/send?phone=5511993501713"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Image src="/whatsapp.png" alt="wpp" width={181} height={181} />
+          </a>
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center justify-center">
+        <span className="font-semibold text-primary">
+          © 2025 Direitos reservados - Termos de uso - Política de Privacidade
+        </span>
+        <span className="font-semibold text-primary mb-4">
+          Criado por Agência Dulce (e programado pelo cara que a ama)
+        </span>
+      </div>
+    </footer>
+  );
 }

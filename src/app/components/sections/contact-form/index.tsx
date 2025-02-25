@@ -4,12 +4,18 @@ export default function ContactForm() {
   const inputClasses = `w-content h-16 px-10 bg-primary rounded-full text-white text-2xl font-semibold
     placeholder-white focus:outline-primary-darker`;
 
+  const textAreaClasses = `w-content h-[15rem] px-10 py-4 bg-primary rounded-[35px] text-white text-2xl font-semibold
+    placeholder-white focus:outline-primary-darker`;
+
   const labelClasses = `text-3xl text-primary-darker font-bold mb-1`;
 
   const inputContainerClasses = `w-full flex flex-col mb-6`;
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center mt-[-20px] mb-32">
+    <div
+      id="contact"
+      className="w-full h-screen flex flex-col items-center justify-center mt-[-20px] mb-[100px]"
+    >
       <div className="w-full flex flex-row pr-72 items-center justify-end">
         <h1 className="h-min mb-[-65px] p-0 text-end font-bold text-[10rem] text-primary-darker">
           contato
@@ -45,13 +51,14 @@ export default function ContactForm() {
 
           <div className={inputContainerClasses}>
             <label className={labelClasses}>Mensagem*</label>
-            <textarea
-              className={inputClasses + " rounded-[35px] h-[15rem] py-4"}
-            />
+            <textarea className={textAreaClasses} />
           </div>
 
           <div className="w-full flex flex-row items-center justify-center">
-            <Button label="Enviar" customClasses="w-1/2 h-[60px]" />
+            <Button
+              label="Enviar"
+              customClasses="w-1/2 h-[60px] rounded-[100px] hover:opacity-80"
+            />
           </div>
         </form>
       </div>

@@ -20,11 +20,30 @@ export default function Header() {
         </div>
 
         <div className="mt-8 flex flex-row justify-center">
-          <Button label="Sobre mim" />
-          <Button label="Serviço" hasMargin />
-          <Button label="Missão" hasMargin />
-          <Button label="Dúvidas" hasMargin />
-          <Button label="Contato" hasMargin />
+          <Button
+            label="Sobre mim"
+            onClick={() => (window.location.href = "#about-me")}
+          />
+          <Button
+            label="Serviço"
+            hasMargin
+            onClick={() => (window.location.href = "#work-areas")}
+          />
+          <Button
+            label="Missão"
+            hasMargin
+            onClick={() => (window.location.href = "#core-values")}
+          />
+          <Button
+            label="Dúvidas"
+            hasMargin
+            onClick={() => (window.location.href = "#sac")}
+          />
+          <Button
+            label="Contato"
+            hasMargin
+            onClick={() => (window.location.href = "#contact")}
+          />
         </div>
 
         <div className="w-1/2 ml-64 my-20">

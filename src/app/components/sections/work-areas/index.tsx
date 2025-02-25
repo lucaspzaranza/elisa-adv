@@ -1,6 +1,7 @@
 import Banner from "@/components/ui/banner";
 import Card from "@/components/ui/card";
 import { TitleWithTextElement } from "@/interfaces/TitleWithTextElement";
+import Image from "next/image";
 
 export default function WorkAreas() {
   const workAreas: TitleWithTextElement[] = [
@@ -23,8 +24,30 @@ export default function WorkAreas() {
   ];
 
   return (
-    <div className="pl-[100px] w-11/12">
-      <div className="grid grid-cols-2 gap-6 my-24">
+    <div id="work-areas" className="relative pl-[100px] w-full">
+      <div className="absolute top-[-250px] left-0 w-full">
+        <svg
+          className="w-full h-[200px]" // Aumentei a altura para ondas mais profundas
+          viewBox="0 0 1440 350"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            {/* Gradiente do cinza para o branco */}
+            <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stopColor="#999" /> {/* Cinza forte no topo */}
+              <stop offset="65%" stopColor="#fff" />{" "}
+              {/* Branco na parte de baixo */}
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,90 C300,550 1120,-400 1600,320 C1440,600 1440,320 1440,320 L0,320 Z"
+            fill="url(#gradient)"
+          />
+        </svg>
+      </div>
+
+      <div className="w-11/12 grid grid-cols-2 gap-6 my-24">
         {workAreas.map((data, index) => (
           <Card {...data} key={index} />
         ))}
