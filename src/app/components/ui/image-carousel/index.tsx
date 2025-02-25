@@ -37,7 +37,7 @@ export default function ImageCarousel() {
                 src={src}
                 alt={`Slide ${index + 1}`}
                 fill
-                objectFit="fill"
+                style={{ objectFit: "fill" }}
               />
             </div>
           </SwiperSlide>
