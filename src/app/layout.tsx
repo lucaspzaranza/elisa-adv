@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Elisa Ferraz | Direito Canônico",
-  description: "Feito por Lucas Zaranza.",
+  description: "Feito por Agência Dulce & Lucas Zaranza.",
 };
 
 export default function RootLayout({
