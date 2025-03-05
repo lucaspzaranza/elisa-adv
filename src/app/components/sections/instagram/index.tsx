@@ -10,8 +10,8 @@ export default function Instagram() {
         className="block"
       >
         <h1
-          className="w-content px-24 py-3 rounded-full flex flex-row items-center hover:opacity-80 transition 
-          justify-center text-white font-bold bg-gradient-to-r from-[#C850D3] to-[#7f009c] text-4xl"
+          className="w-content px-24 py-3 rounded-full text-center flex flex-row items-center hover:opacity-80 transition 
+          justify-center text-white font-bold bg-gradient-to-r from-[#C850D3] to-[#7f009c] text-3xl sm:text-4xl"
         >
           Me siga no Instagram
         </h1>

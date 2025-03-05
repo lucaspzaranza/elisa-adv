@@ -59,8 +59,8 @@ export default function ContactForm() {
       id="contact"
       className="w-full h-screen flex flex-col items-center justify-center mt-[-20px] mb-[100px]"
     >
-      <div className="w-full flex flex-row pr-72 items-center justify-end">
-        <h1 className="h-min mb-[-65px] p-0 text-end font-bold text-[10rem] text-primary-darker">
+      <div className="w-full flex flex-row pr-32 sm:pr-72 items-center justify-end">
+        <h1 className="h-min mb-[-35px] sm:mb-[-65px] p-0 text-end font-bold text-[5rem] sm:text-[10rem] text-primary-darker">
           contato
         </h1>
       </div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
             />
           </div>
 
-          <div className="w-full flex flex-row items-center gap-16 justify-between">
+          <div className="w-full flex flex-col sm:flex-row items-center sm:gap-16 justify-between">
             <div className={inputContainerClasses}>
               <label className={labelClasses}>
                 Número de telefone (Whats)*

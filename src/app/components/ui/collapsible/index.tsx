@@ -13,11 +13,11 @@ export default function CollapsibleMenu(
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full pl-default mx-auto mt-10">
+    <div className="w-full pl-8 sm:pl-default mx-auto mt-10">
       {/* Botão que expande/colapsa */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-7/12 flex flex-row items-start justify-start p-0 rounded-lg"
+        className="w-full sm:w-7/12 flex flex-row items-start justify-start p-0 rounded-lg"
       >
         <span className="flex flex-row w-full items-start gap-3 justify-between text-start text-4xl pl-0 mr-3 font-bold text-primary-darker">
           <p className="inline-block w-content leading-tight p-0">
@@ -43,7 +43,7 @@ export default function CollapsibleMenu(
         transition={{ duration: 0.3 }}
         className="overflow-hidden"
       >
-        <div className="w-1/2 py-4">
+        <div className="w-full sm:w-1/2 py-4">
           <p className="text-3xl pl-0">{props.children}</p>
         </div>
       </motion.div>

@@ -12,8 +12,8 @@ export default function Button({
   onClick?: () => void;
 }) {
   const btnClasses = `px-6 py-1 rounded-full bg-primary text-lg 
-    font-semibold text-white min-w-[180px]
-     ${hasMargin ? "ml-4" : ""} + ${customClasses}`;
+    font-semibold text-white w-1/2 sm:min-w-[180px]
+     ${hasMargin ? "m-0 sm:ml-4" : ""} + ${customClasses}`;
 
   return (
     <button className={btnClasses} onClick={onClick}>

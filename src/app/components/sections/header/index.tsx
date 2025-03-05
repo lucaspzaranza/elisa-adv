@@ -12,14 +12,14 @@ export default function Header() {
 
   return (
     <div className="bg-gray-100 pb-24">
-      <div className="bg-elisa-1 bg-no-repeat bg-cover bg-[position:0px_10%]">
+      <div className="bg-elisa-1 bg-no-repeat flex flex-col justify-center items-center bg-cover bg-[position:-450px_0%] sm:bg-[position:0px_10%]">
         <div className="grid grid-cols-3 h-6">
           <div className="bg-primary-lighter"></div>
           <div className="bg-primary-darker"></div>
           <div className="bg-primary"></div>
         </div>
 
-        <div className="mt-8 flex flex-row justify-center">
+        <div className="w-[80%] mt-8 flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center items-center">
           <Button
             label="Sobre mim"
             onClick={() => (window.location.href = "#about-me")}
@@ -46,7 +46,7 @@ export default function Header() {
           />
         </div>
 
-        <div className="w-1/2 ml-64 my-20">
+        <div className="w-full sm:w-1/2 flex flex-row items-center justify-center sm:block sm:justify-normal ml-0 sm:ml-64 my-20">
           <Image src="/logo.png" alt="Logo" width={540} height={230} priority />
         </div>
 

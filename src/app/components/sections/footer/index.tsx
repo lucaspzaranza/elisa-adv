@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <footer className="relative w-full h-auto flex flex-col items-center justify-center">
       <h1 className={h1Classes}>elisa.ferraz23@gmail.com</h1>
-      <div className="w-full flex flex-row justify-center mb-8">
+      <div className="w-full flex flex-col sm:flex-row justify-center mb-8">
         <div className="w-[100vw] text-center">
           <h1 className={h1Classes}>11 99350-1713</h1>
         </div>
-        <div className="absolute bottom-4 right-4 hover:opacity-80">
+        <div className="w-full flex flex-row justify-center sm:block sm:w-auto sm:absolute sm:bottom-4 sm:right-4 hover:opacity-80">
           <a
             href="https://api.whatsapp.com/send?phone=5511993501713"
             target="_blank"
@@ -19,6 +19,8 @@ export default function Footer() {
             className="block"
           >
             <Image src="/whatsapp.png" alt="wpp" width={181} height={181} />
+            {/* <div className="w-1/2 h-1/2">
+            </div> */}
           </a>
         </div>
       </div>
