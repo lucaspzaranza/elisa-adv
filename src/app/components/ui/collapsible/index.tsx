@@ -13,7 +13,7 @@ export default function CollapsibleMenu(
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full pl-8 sm:pl-default mx-auto mt-10">
+    <div className="w-[80%] sm:w-full pl-8 sm:pl-default sm:mx-auto mt-10">
       {/* Botão que expande/colapsa */}
       <button
         onClick={() => setIsOpen(!isOpen)}

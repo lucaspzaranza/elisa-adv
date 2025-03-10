@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Instagram() {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-16 mb-36">
+    <div className="w-[85%] sm:w-full flex flex-col items-center justify-center gap-16 mb-36">
       <a
         href="https://www.instagram.com/elisaferraz.canon/"
         target="_blank"
@@ -25,7 +25,7 @@ export default function Instagram() {
       >
         <Image
           src="/insta.png"
-          className="rounded-[100px] shadow-[-80px_80px_40px_rgba(0,0,0,0.3)] cursor-pointer hover:opacity-80 transition"
+          className="rounded-[50px] sm:rounded-[100px] shadow-[-20px_20px_40px_rgba(0,0,0,0.3)] sm:shadow-[-80px_80px_40px_rgba(0,0,0,0.3)] cursor-pointer hover:opacity-80 transition"
           alt="insta"
           width={926}
           height={775}

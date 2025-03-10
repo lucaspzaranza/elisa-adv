@@ -24,8 +24,8 @@ export default function WorkAreas() {
   ];
 
   return (
-    <div id="work-areas" className="relative pl-[100px] w-full">
-      <div className="absolute top-[-140px] sm:top-[-250px] left-0 w-full">
+    <div id="work-areas" className="relative pl-[-100px] sm:pl-[100px] w-full">
+      <div className="absolute top-[-50px] sm:top-[-150px] left-0 w-full">
         <svg
           className="w-full h-[60px] sm:h-[200px]" // Aumentei a altura para ondas mais profundas
           viewBox="0 0 1440 350"
@@ -47,10 +47,12 @@ export default function WorkAreas() {
         </svg>
       </div>
 
-      <div className="w-full sm:w-11/12 grid sm:grid-cols-2 gap-6 my-24">
-        {workAreas.map((data, index) => (
-          <Card {...data} key={index} />
-        ))}
+      <div className="w-full flex flex-col items-center justify-around">
+        <div className="w-[80%] sm:w-11/12 sm:grid sm:grid-cols-2 gap-6 my-24">
+          {workAreas.map((data, index) => (
+            <Card {...data} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

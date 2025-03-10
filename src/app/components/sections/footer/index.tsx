@@ -5,10 +5,10 @@ export default function Footer() {
   text-3xl font-semibold text-primary-darker p-0`;
 
   return (
-    <footer className="relative w-full h-auto flex flex-col items-center justify-center">
+    <footer className="relative w-[85%] sm:w-full h-auto flex flex-col items-center justify-center">
       <h1 className={h1Classes}>elisa.ferraz23@gmail.com</h1>
       <div className="w-full flex flex-col sm:flex-row justify-center mb-8">
-        <div className="w-[100vw] text-center">
+        <div className="w-[100%] sm:w-[100vw] text-center">
           <h1 className={h1Classes}>11 99350-1713</h1>
         </div>
         <div className="w-full flex flex-row justify-center sm:block sm:w-auto sm:absolute sm:bottom-4 sm:right-4 hover:opacity-80">
@@ -19,16 +19,14 @@ export default function Footer() {
             className="block"
           >
             <Image src="/whatsapp.png" alt="wpp" width={181} height={181} />
-            {/* <div className="w-1/2 h-1/2">
-            </div> */}
           </a>
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <span className="font-semibold text-primary">
+        <span className="font-semibold text-primary text-center">
           © 2025 Direitos reservados - Termos de uso - Política de Privacidade
         </span>
-        <span className="font-semibold text-primary mb-4">
+        <span className="font-semibold text-primary mb-4 text-center">
           Criado por Agência Dulce (e programado pelo cara que a ama)
         </span>
       </div>

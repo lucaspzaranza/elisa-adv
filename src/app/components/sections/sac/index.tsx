@@ -4,7 +4,7 @@ export default function SAC() {
   return (
     <div id="sac" className="mb-16 bg-flowers bg-auto">
       <div
-        className="w-full sm:w-fit flex pr-12 py-4 text-white text-[3.25rem] rounded-r-full
+        className="w-[80%] sm:w-fit flex pr-12 py-4 text-white text-[2rem] sm:text-[3.25rem] rounded-r-full
         font-bold bg-gradient-to-r from-[#7f009c] to-[#C850D3] mb-10"
       >
         <h1>SAC (Perguntas Frequentes)</h1>
