@@ -42,7 +42,9 @@ export default function CollapsibleMenu(
         className="overflow-hidden"
       >
         <div className="w-full sm:w-1/2 py-4">
-          <p className="text-xl sm:text-3xl pl-0">{props.children}</p>
+          <p className="text-xl text-black sm:text-3xl pl-0">
+            {props.children}
+          </p>
         </div>
       </motion.div>
     </div>
