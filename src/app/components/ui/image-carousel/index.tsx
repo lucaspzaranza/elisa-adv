@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 const images = ["/banners/1.png", "/banners/2.png", "/banners/3.png"];
 
 export default function ImageCarousel() {
-  const dimensions = "w-[27rem] h-[9rem] sm:w-[65rem] sm:h-[22rem] ";
+  const dimensions = "w-[100%] h-[9rem] sm:w-[65rem] sm:h-[22rem] ";
   return (
     <div
       className={

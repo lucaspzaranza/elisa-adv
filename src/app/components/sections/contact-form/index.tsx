@@ -44,32 +44,32 @@ export default function ContactForm() {
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   };
 
-  const inputClasses = `w-content h-16 px-10 bg-primary rounded-full text-white text-2xl font-semibold
+  const inputClasses = `w-content h-10 sm:h-16 px-2 sm:px-10 bg-primary rounded-full text-white text-lg sm:text-2xl font-semibold
     placeholder-white focus:outline-primary-darker`;
 
   const textAreaClasses = `w-content h-[15rem] px-10 py-4 bg-primary rounded-[35px] text-white text-2xl font-semibold
     placeholder-white focus:outline-primary-darker`;
 
-  const labelClasses = `text-3xl text-primary-darker font-bold mb-1`;
+  const labelClasses = `text-xl sm:text-3xl text-primary-darker font-bold mb-1`;
 
-  const inputContainerClasses = `w-full flex flex-col mb-6`;
+  const inputContainerClasses = `w-full flex flex-col mb-2 sm:mb-6`;
 
   return (
     <div
       id="contact"
-      className="w-[90%] sm:w-full h-screen flex flex-col items-center justify-center mt-[-20px] mb-[100px]"
+      className="w-full h-content sm:h-screen flex flex-col items-center justify-center mt-[-20px] sm:mb-[100px]"
     >
       <div className="w-fit sm:w-full flex flex-row  p-0 sm:pr-72 items-center justify-end">
-        <h1 className="h-min mb-[-35px] sm:mb-[-65px] p-0 pl-[-100px] sm:pl-0 text-end font-bold text-[5rem] sm:text-[10rem] text-primary-darker">
+        <h1 className="h-min mb-[-18px] sm:mb-[-140px] p-0 pl-[-100px] sm:pl-0 text-end font-bold text-[3rem] sm:text-[10rem] text-primary-darker">
           contato
         </h1>
       </div>
       <div
-        className="w-10/12 m-[75px] h-fit sm:h-full mt-0 flex flex-row justify-center
-        rounded-[100px] ring-4 ring-primary-darker"
+        className="w-10/12 m-[30px] sm:m-[75px] h-fit sm:h-full mt-0 flex flex-row justify-center
+        rounded-[60px] sm:rounded-[100px] ring-4 ring-primary-darker"
       >
         <form
-          className="w-full px-4 sm:px-16 py-10 text-center sm:text-start"
+          className="w-full px-4 sm:px-16 py-2 sm:py-10 text-center sm:text-start"
           onSubmit={handleMailto}
         >
           <div className={inputContainerClasses}>
@@ -129,7 +129,7 @@ export default function ContactForm() {
           <div className="w-full flex flex-row items-center justify-center">
             <Button
               label="Enviar"
-              customClasses="w-1/2 h-[60px] rounded-[100px] hover:opacity-80"
+              customClasses="w-full h-[40px] sm:h-[60px] rounded-[100px] hover:opacity-80 mb-3 sm:mb-0 sm:text-3xl"
             />
           </div>
         </form>

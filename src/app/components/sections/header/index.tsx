@@ -19,7 +19,7 @@ export default function Header() {
           <div className="bg-primary"></div>
         </div>
 
-        <div className="w-[80%] mt-8 flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center items-center">
+        <div className="w-full sm:w-[80%] mt-8 flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center items-center">
           <Button
             label="Sobre mim"
             onClick={() => (window.location.href = "#about-me")}
