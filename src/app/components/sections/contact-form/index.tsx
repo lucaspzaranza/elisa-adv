@@ -57,7 +57,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="w-full h-content sm:h-screen flex flex-col items-center justify-center mt-[-20px] sm:mb-[100px]"
+      className="w-full bg-white h-content sm:h-screen flex flex-col items-center justify-center mt-[-20px] sm:mb-[100px]"
     >
       <div className="w-fit sm:w-full flex flex-row  p-0 sm:pr-72 items-center justify-end">
         <h1 className="h-min mb-[-18px] sm:mb-[-140px] p-0 pl-[-100px] sm:pl-0 text-end font-bold text-[3rem] sm:text-[10rem] text-primary-darker">

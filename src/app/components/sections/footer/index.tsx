@@ -5,7 +5,7 @@ export default function Footer() {
   text-xl sm:text-3xl font-semibold text-primary-darker p-0`;
 
   return (
-    <footer className="relative w-full h-auto flex flex-col items-center justify-center">
+    <footer className="relative bg-white w-full h-auto flex flex-col items-center justify-center">
       <h1 className={h1Classes}>elisa.ferraz23@gmail.com</h1>
       <div className="w-full flex flex-col sm:flex-row justify-center sm:mb-8">
         <div className="w-full text-center">

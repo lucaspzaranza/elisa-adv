@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Instagram() {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-6 sm:gap-16 mb-12 sm:mb-36">
+    <div className="w-full bg-white flex flex-col items-center justify-center gap-6 sm:gap-16 mb-12 sm:mb-36">
       <a
         href="https://www.instagram.com/elisaferraz.canon/"
         target="_blank"

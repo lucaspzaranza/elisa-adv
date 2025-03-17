@@ -47,7 +47,7 @@ export default function WorkAreas() {
         </svg>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-around">
+      <div className="w-full flex bg-white flex-col items-center justify-around">
         <div className="w-full flex flex-col items-center sm:items-start sm:w-11/12 sm:grid sm:grid-cols-2 sm:gap-6 my-8 sm:my-24">
           {workAreas.map((data, index) => (
             <Card {...data} key={index} />
