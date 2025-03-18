@@ -13,13 +13,13 @@ export default function CollapsibleMenu(
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full pl-1 sm:pl-default sm:mx-auto mt-7 sm:mt-10">
+    <div className="w-full pl-1 sm:pl-default sm:mx-auto mt-4 sm:mt-10">
       {/* Botão que expande/colapsa */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full sm:w-7/12 flex flex-row items-start justify-start p-0 rounded-lg"
       >
-        <span className="flex flex-row w-full items-start justify-between text-start text-2xl sm:text-4xl pl-0 font-bold text-primary-darker">
+        <span className="flex flex-row w-full items-start justify-between text-start text-xl sm:text-4xl pl-0 font-bold text-primary-darker">
           <p className="inline-block w-full leading-tight p-0">{props.topic}</p>
 
           {/* Ícone de seta com animação */}
@@ -27,7 +27,7 @@ export default function CollapsibleMenu(
             animate={{ rotate: isOpen ? 180 : 0 }}
             transition={{ duration: 0.2 }}
           >
-            <ChevronDown className="w-10 h-10 rounded-full p-1 bg-gradient-to-br from-[#7f009c] to-[#C850D3] text-white" />
+            <ChevronDown className="w-8 h-8 sm:w-10 sm:h-10 rounded-full p-1 bg-gradient-to-br from-[#7f009c] to-[#C850D3] text-white" />
           </motion.div>
         </span>
       </button>
@@ -42,7 +42,7 @@ export default function CollapsibleMenu(
         className="overflow-hidden"
       >
         <div className="w-full sm:w-1/2 py-4">
-          <p className="text-xl text-black sm:text-3xl pl-0">
+          <p className="text-lg text-black sm:text-3xl pl-0">
             {props.children}
           </p>
         </div>

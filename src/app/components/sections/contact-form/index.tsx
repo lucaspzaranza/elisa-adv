@@ -44,13 +44,13 @@ export default function ContactForm() {
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   };
 
-  const inputClasses = `w-content h-10 sm:h-16 px-2 sm:px-10 bg-primary rounded-full text-white text-lg sm:text-2xl font-semibold
+  const inputClasses = `w-content h-10 sm:h-16 px-2 sm:px-10 bg-primary rounded-full text-white text-md sm:text-2xl font-semibold
     placeholder-white focus:outline-primary-darker`;
 
   const textAreaClasses = `w-content h-[15rem] px-10 py-4 bg-primary rounded-[35px] text-white text-2xl font-semibold
     placeholder-white focus:outline-primary-darker`;
 
-  const labelClasses = `text-xl sm:text-3xl text-primary-darker font-bold mb-1`;
+  const labelClasses = `text-lg sm:text-3xl text-primary-darker font-bold mb-1`;
 
   const inputContainerClasses = `w-full flex flex-col mb-2 sm:mb-6`;
 
@@ -60,7 +60,7 @@ export default function ContactForm() {
       className="w-full bg-white h-content sm:h-screen flex flex-col items-center justify-center mt-[-20px] sm:mb-[100px]"
     >
       <div className="w-fit sm:w-full flex flex-row  p-0 sm:pr-72 items-center justify-end">
-        <h1 className="h-min mb-[-18px] sm:mb-[-140px] p-0 pl-[-100px] sm:pl-0 text-end font-bold text-[3rem] sm:text-[10rem] text-primary-darker">
+        <h1 className="h-min mb-[-15px] sm:mb-[-140px] p-0 pl-[-100px] sm:pl-0 text-end font-bold text-[2.5rem] sm:text-[10rem] text-primary-darker">
           contato
         </h1>
       </div>
@@ -129,7 +129,8 @@ export default function ContactForm() {
           <div className="w-full flex flex-row items-center justify-center">
             <Button
               label="Enviar"
-              customClasses="w-full h-[40px] sm:h-[60px] rounded-[100px] hover:opacity-80 mb-3 sm:mb-0 sm:text-3xl"
+              customClasses="w-full h-[40px] sm:h-[60px] rounded-[100px] hover:opacity-80 mb-3 sm:mb-0"
+              fontSize="text-lg sm:text-3xl"
             />
           </div>
         </form>

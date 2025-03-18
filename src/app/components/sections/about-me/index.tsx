@@ -5,13 +5,13 @@ export default function AboutMe() {
   return (
     <section id="about-me" className="relative">
       <div className="bg-gradient-to-b from-[#f3f4f6] to-[#fff] h-full relative pb-0 sm:pb-16">
-        <div className="w-full bg-elisa-2 bg-no-repeat bg-[length:864px_1080px] bg-[100%_15%] sm:bg-[100%_40%]">
-          <div className="w-full sm:w-1/2 bg-gray-50 bg-opacity-60 sm:bg-opacity-0 sm:bg-transparent text-strong-color">
+        <div className="w-full bg-flowers sm:bg-elisa-2 bg-no-repeat sm:bg-[length:864px_1080px] bg-[100%_15%] sm:bg-[100%_40%]">
+          <div className="w-full sm:w-1/2 bg-gray-50 bg-opacity-0 sm:bg-transparent text-strong-color">
             <h1 className="w-full text-2xl sm:text-4xl">
-              <strong className="flex flex-row text-center sm:text-start items-start sm:items-end justify-normal">
+              <strong className="flex flex-row text-start items-start sm:items-end justify-normal">
                 Sou Elisa, advogada <br /> e teóloga de formação!
                 <Image
-                  className="sm:ml-2 sm:pb-1"
+                  className="mt-5 ml-2 sm:mt-0 sm:pb-1"
                   src="/scales.png"
                   alt="Direito Canônico"
                   width={scalesSize}
@@ -19,7 +19,7 @@ export default function AboutMe() {
                 />
               </strong>
             </h1>
-            <section className="w-full sm:w-[85%] mt-8 text-xl sm:text-3xl">
+            <section className="w-full sm:w-[85%] mt-2 sm:mt-8 text-lg sm:text-3xl">
               <p className="mb-8">
                 Atualmente sou mestranda em Direito Canônico pelo Instituto
                 Superior de Direito Canônico (ISDC) em Londrina/PR e atuo no

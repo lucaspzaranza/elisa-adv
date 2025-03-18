@@ -9,6 +9,7 @@ export default function Header() {
     "px-6 py-1 rounded-full bg-primary text-lg font-semibold text-white min-w-[180px]";
   const btnMarginLeft = "ml-4";
   const btnWithMarginLeft = btnClasses + " " + btnMarginLeft;
+  const btnSize = "text-md sm:text-lg";
 
   return (
     <div className="bg-gray-100 pb-24">
@@ -19,29 +20,34 @@ export default function Header() {
           <div className="bg-primary"></div>
         </div>
 
-        <div className="w-full sm:w-[80%] mt-8 flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center items-center">
+        <div className="w-[60%] sm:w-[80%] mt-8 flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center items-center">
           <Button
             label="Sobre mim"
+            fontSize={btnSize}
             onClick={() => (window.location.href = "#about-me")}
           />
           <Button
             label="Serviço"
             hasMargin
+            fontSize={btnSize}
             onClick={() => (window.location.href = "#work-areas")}
           />
           <Button
             label="Missão"
             hasMargin
+            fontSize={btnSize}
             onClick={() => (window.location.href = "#core-values")}
           />
           <Button
             label="Dúvidas"
             hasMargin
+            fontSize={btnSize}
             onClick={() => (window.location.href = "#sac")}
           />
           <Button
             label="Contato"
             hasMargin
+            fontSize={btnSize}
             onClick={() => (window.location.href = "#contact")}
           />
         </div>
