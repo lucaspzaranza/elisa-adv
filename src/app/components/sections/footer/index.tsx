@@ -29,7 +29,7 @@ export default function Footer() {
           © 2025 Direitos reservados - Termos de uso - Política de Privacidade
         </span>
         <span className="font-semibold text-primary mb-4 text-center">
-          Criado por Agência Dulce (e programado pelo cara que a ama)
+          Criado por Agência Dulce
         </span>
       </div>
     </footer>
