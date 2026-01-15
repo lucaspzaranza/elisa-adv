@@ -26,12 +26,31 @@ export default function Footer() {
       </div>
       <div className="w-full px-2 sm:px-0 text-sm sm:text-base flex flex-col items-center justify-center">
         <span className="font-semibold text-primary text-center">
-          © 2025 Direitos reservados - Termos de uso - Política de Privacidade
+          © 2026 Direitos reservados - Termos de uso - Política de Privacidade
         </span>
+
         <span className="font-semibold text-primary mb-4 text-center">
-          Criado por Agência Dulce
+          Criado por{" "}
+          <a
+            href="https://dulcecomunicacao.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Agência Dulce
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://www.lucaszaranza.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Lucas Zaranza
+          </a>
         </span>
       </div>
+
     </footer>
   );
 }
